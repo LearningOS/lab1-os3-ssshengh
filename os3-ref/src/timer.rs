@@ -13,6 +13,7 @@ pub fn get_time() -> usize {
 }
 
 /// get current time in microseconds
+/// CLOCK_FREQ: usize = 12500000
 pub fn get_time_us() -> usize {
     time::read() / (CLOCK_FREQ / MICRO_PER_SEC)
 }
